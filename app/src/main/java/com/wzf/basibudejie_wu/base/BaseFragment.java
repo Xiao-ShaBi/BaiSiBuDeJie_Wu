@@ -1,4 +1,4 @@
-package com.wzf.basibudejie_wu.bean;
+package com.wzf.basibudejie_wu.base;
 
 import android.content.Context;
 import android.os.Bundle;

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rg_main_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/rb_best"
+        style="@style/MainButtonStyle"
+        android:drawableTop="@drawable/main_best_button_selector"
+        android:text="精华" />
+
+    <RadioButton
+        android:id="@+id/rb_latest"
+        style="@style/MainButtonStyle"
+        android:drawableTop="@drawable/main_latest_button_selector"
+        android:text="最新" />
+
+
+    <ImageView
+        android:id="@+id/iv_main_middle"
+        android:src="@drawable/main_bottom_writeposts_normal"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+
+    <RadioButton
+        android:id="@+id/rb_news"
+        style="@style/MainButtonStyle"
+        android:drawableTop="@drawable/main_news_button_selector"
+        android:text="关注" />
+
+    <RadioButton
+        android:id="@+id/rb_my"
+        style="@style/MainButtonStyle"
+        android:drawableTop="@drawable/main_my_button_selector"
+        android:text="我" />
+</RadioGroup>

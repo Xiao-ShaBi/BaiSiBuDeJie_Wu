@@ -52,4 +52,9 @@ dependencies {
     // 支持 WebP （静态图+动图），需要添加
     compile 'com.facebook.fresco:animated-webp:1.0.0'
     compile 'com.facebook.fresco:webpsupport:1.0.0'
+
+    //洪阳大神的okhttp3的工具类
+    compile 'com.zhy:okhttputils:2.6.2'
+
+    compile 'com.alibaba:fastjson:1.1.55.android'
 }
