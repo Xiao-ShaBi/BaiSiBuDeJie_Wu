@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!--<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:id="@+id/rv_post_show_items"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+<TextView
+    android:id="@+id/tv_current"
+    android:background="@color/colorAccent"
+    android:text="========"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-
-
-    <TextView
-        android:background="#ff0000"
-        android:gravity="center"
-        android:text="@string/app_name"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-</LinearLayout>
+    xmlns:android="http://schemas.android.com/apk/res/android" />

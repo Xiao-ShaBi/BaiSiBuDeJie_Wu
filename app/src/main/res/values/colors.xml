@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <!--  头部背景颜色 -->
+    <color name="post_title_bg">#ff2d55</color>
     <!-- 底部文字颜色 -->
     <color name="buttom_color">#ff2d55</color>
 </resources>

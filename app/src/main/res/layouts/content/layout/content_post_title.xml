@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- 这里是百思不得姐，的头位置
+      是精华和热贴的头-->
+
+    <LinearLayout
+        android:background="@color/post_title_bg"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x20">
+
+
+
+    </LinearLayout>
+
+
+
+</android.support.design.widget.AppBarLayout>

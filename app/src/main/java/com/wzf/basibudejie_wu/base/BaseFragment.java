@@ -37,7 +37,7 @@ public abstract class BaseFragment extends Fragment {
         initData();
     }
 
-    private void initData() {
+    protected void initData() {
 
     }
 }

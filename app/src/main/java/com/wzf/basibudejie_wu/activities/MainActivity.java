@@ -7,6 +7,7 @@ import android.widget.RadioGroup;
 
 import com.atguigu.chengchangqing.baisibudejie_wu.R;
 import com.wzf.basibudejie_wu.base.BaseActivity;
+import com.wzf.basibudejie_wu.fragments.HomeFragment;
 import com.wzf.basibudejie_wu.fragments.PostFragment;
 import com.wzf.basibudejie_wu.utils.FragmentChoiceUtils;
 
@@ -22,6 +23,10 @@ public class MainActivity extends BaseActivity {
     ImageView ivMainMiddle;
     @BindView(R.id.rg_main_bottom)
     RadioGroup rgMainBottom;
+
+    /**
+     * fragment的管理类
+     */
     private FragmentChoiceUtils fragmentChoiceUtils;
 
     @Override
@@ -39,10 +44,10 @@ public class MainActivity extends BaseActivity {
     private void initData() {
         ArrayList<Fragment> list = new ArrayList<>(4);
 
-        list.add(new PostFragment());
-        list.add(new PostFragment());
-        list.add(new PostFragment());
-        list.add(new PostFragment());
+        list.add(new HomeFragment(new PostFragment("1")));
+        list.add(new HomeFragment(new PostFragment("2")));
+        list.add(new HomeFragment(new PostFragment("3")));
+        list.add(new HomeFragment(new PostFragment("4")));
 
         fragmentChoiceUtils = new FragmentChoiceUtils(list, getSupportFragmentManager(),R.id.fl_main_store_fragment);
     }
