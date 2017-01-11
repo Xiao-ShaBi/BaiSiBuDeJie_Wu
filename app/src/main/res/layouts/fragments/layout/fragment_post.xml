@@ -1,12 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"-->
-    <!--android:id="@+id/rv_post_show_items"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent" />-->
-<TextView
-    android:id="@+id/tv_current"
-    android:background="@color/colorAccent"
-    android:text="========"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android" />
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF4081">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/jinghua_top_left_selector" />
+
+                <TextView
+                    android:id="@+id/jinghua_top_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:text="百思不得姐"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/jinghua_top_text"
+                    android:background="@drawable/top_refresh_btn" />
+
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/jinghua_top_right_selector" />
+            </RelativeLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/jinghua_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/title"
+            android:layout_gravity="center_horizontal" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/post_show"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+        <!---->
+
+
+</android.support.design.widget.CoordinatorLayout>
