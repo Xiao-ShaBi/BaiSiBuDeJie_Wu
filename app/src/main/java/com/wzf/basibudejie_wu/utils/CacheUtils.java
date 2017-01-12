@@ -14,7 +14,7 @@ public class CacheUtils {
         sp.edit().putString(key, value).commit();
     }
 
-    public static String getString(String txt, Context context, String key) {
+    public static String getString(Context context, String txt, String key) {
         SharedPreferences sp = context.getSharedPreferences(txt, Context.MODE_PRIVATE);
         return sp.getString(key, "");
     }

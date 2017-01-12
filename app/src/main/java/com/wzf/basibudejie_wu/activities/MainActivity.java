@@ -46,8 +46,8 @@ public class MainActivity extends BaseActivity {
     private void initData() {
         ArrayList<Fragment> list = new ArrayList<>(4);
 
-        list.add(new HomeFragment(new PostFragment("1")));
-        list.add(new HomeFragment(new PostFragment("2")));
+        list.add(new HomeFragment(new PostFragment()));
+        list.add(new HomeFragment(new PostFragment()));
         list.add(new HomeFragment(new AttentionFragment()));
         list.add(new HomeFragment(new MyFragment()));
 
