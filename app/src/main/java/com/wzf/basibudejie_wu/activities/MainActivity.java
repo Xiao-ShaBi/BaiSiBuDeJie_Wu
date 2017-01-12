@@ -8,7 +8,9 @@ import android.widget.RadioGroup;
 import com.atguigu.chengchangqing.baisibudejie_wu.R;
 import com.wzf.basibudejie_wu.base.BaseActivity;
 import com.wzf.basibudejie_wu.fragments.HomeFragment;
-import com.wzf.basibudejie_wu.fragments.PostFragment;
+import com.wzf.basibudejie_wu.fragments.SubHomeFragment.AttentionFragment;
+import com.wzf.basibudejie_wu.fragments.SubHomeFragment.MyFragment;
+import com.wzf.basibudejie_wu.fragments.SubHomeFragment.PostFragment;
 import com.wzf.basibudejie_wu.utils.FragmentChoiceUtils;
 
 import java.util.ArrayList;
@@ -46,8 +48,8 @@ public class MainActivity extends BaseActivity {
 
         list.add(new HomeFragment(new PostFragment("1")));
         list.add(new HomeFragment(new PostFragment("2")));
-        list.add(new HomeFragment(new PostFragment("3")));
-        list.add(new HomeFragment(new PostFragment("4")));
+        list.add(new HomeFragment(new AttentionFragment()));
+        list.add(new HomeFragment(new MyFragment()));
 
         fragmentChoiceUtils = new FragmentChoiceUtils(list, getSupportFragmentManager(),R.id.fl_main_store_fragment);
     }
