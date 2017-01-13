@@ -64,7 +64,7 @@ public class GetTabDataFromNet {
             @Override
             public void Success(String response, int id) {
                 FIRST_LANDING = SUCCESS;
-                if (level == LOCAL_GET_DATA) {
+                if (level == LOCAL_GET_DATA || Data.getInstance().getTabBean() == null) {
 
                     TabBean tabBean = JSONObject.parseObject(response, TabBean.class);
 

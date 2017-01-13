@@ -22,6 +22,7 @@ public class BSBDJApp extends Application {
         //初始化，我自己的工具类
         NomalUtils.initNomalUtils(this);
 
+        //初始化fragment的状态
         FragmentStateUtils.storeState();
     }
 }
